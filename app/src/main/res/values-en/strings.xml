@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">ITQ</string>
+    <string name="test_name">The Individual Typological Questionnaire</string>
+    <string name="description">The Individual Typological Questionnaire (ITQ) is an original psychodiagnostic technique developed by Lyudmila Nikolaevna Sobchik based on her own theory of leading trends. These methods are defined by 10 scales.</string>
+    <string name="create_account"><u>I want to create an account</u></string>
+    <string name="time_test">7 minutes</string>
+    <string name="vopros_kol">61 questions</string>
+    <string name="quest">Do you want to take the test?</string>
+    <string name="personal">PROFILE</string>
+    <string name="test">TEST</string>
+    <string name="email">YOUR EMAIL</string>
+    <string name="password">YOUR PASSWORD</string>
+    <string name="autorization">SIGN IN</string>
+    <string name="login">Login</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="name">NAME</string>
+    <string name="noAccount">I don\'t have an account</string>
+    <string name="reset_password">I FORGOT A PASSWORD</string>
+    <string name="gender_check">GENDER</string>
+    <string name="register">Create an account</string>
+    <string name="infoAccount">What is an account for?</string>
+    <string name="my_personal">MY PROFILE</string>
+    <string name="edit_personal">Edit profile</string>
+    <string name="result">View statistics</string>
+    <string name="logout">Logout</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="statistic">STATISTIC</string>
+    <string name="test_desc_header">Test Description</string>
+    <string name="next">Next</string>
+    <string name="diagram_result">RESULTS CHART</string>
+    <string name="go_test">Start the test</string>
+
+    <string name="delimiter">*****************************************</string>
+    <string name="typesDescription">Description of psychotypes</string>
+    <string name="lowerStres">1. Extroversion - high scores on the extroversion scale correspond to excessive sociability, which interferes with the purposefulness of actions, increased distractibility, talkativeness, with an excessive number of friends and acquaintances, contacts remain superficial, shallow (many acquaintances – few real friends).</string>
+    <string name="selfApproval">2. Spontaneity - high indicators of the spontaneity scale are characteristic of children with pronounced looseness, a tendency to free self-assertion, striving for leadership or, at least, independence. Any regime framework that restricts their freedom causes opposition and a desire for freedom.</string>
+    <string name="selfJustification">3. Aggressiveness - increased results on the scale of aggressiveness (stenicity) – 4-5 points, on the contrary, indicates expressed self-confidence, desire for self-affirmation, motor activity and independence with low subordination, and with high scores (6 points) indicate excessive activity, impulsive behavior with low subordination, negligence in performing tasks, a tendency to truancy and aggressive behavior, up to obvious malicious hooligan actions.</string>
+    <string name="distraction">4. Rigidity - high indicators on the rigidity scale are characteristic of guys with pronounced perseverance (if it concerns achieving a goal) and stubbornness (if it manifests itself in defending their point of view). Their own status is extremely important to them: both from the standpoint of primacy, power, and from the point of view of material well-being.</string>
+    <string name="substitution">5. Introversion - on the contrary, guys with a pronounced introversion scale are characterized by silence, isolation, isolation. They are very selective in choosing friends, but they are constant in their attachments. They are thoughtful when studying those subjects that they rate as favorite. They assimilate the material better when they are alone.</string>
+    <string name="selfAffirmation">6. Sensitivity - the sensitivity scale is distinguished in children with pronounced impressionability, extremely vulnerable, touchy, prone to give depressive reactions when failures occur. They have expressed a desire to exaggerate their guilt in what happened.</string>
+    <string name="psychomuscularRelaxation">7. Anxiety - high indicators on the anxiety scale reveal a type of personality with increased anxiety, and indicate the predominance of such character traits as indecision, a pronounced sense of responsibility, an internal need to meet the requirements of the environment - teachers, parents, class, suspiciousness, fearfulness, a tendency to unreasonable fears.</string>
+    <string name="controllOverSituation">8. Lability - the lability scale at high rates reflects pronounced emotional instability (lability, mobility). These are children whose mood changes easily - from excessive cheerfulness, talkativeness, ridiculousness to a sharply lowered mood with tears, with violent reactions of distress, accompanied by vegetative manifestations – redness of the face, headaches and other pains, increased pulse, fever, fainting, convulsive twitching, nausea and vomiting.</string>
+    <string name="selfControll">9. Sincerity - if more than 4 points are calculated on the scale of \"lies\" (insincerity), the data is unreliable</string>
+    <string name="positiveSelfMotication">10. Aggravation - if on the scale of \"aggravation\" (emphasizing problems) - more than 4 points, then character traits are emphasized, exaggerated.</string>
+    <string name="birthday">BIRTHDAY</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="test_description">
+        We offer you to take a character accentuation test, or a Schmishek questionnaire, and find out which types of accentuation are most pronounced in you.
+        As the name of the test implies, the questionnaire was developed by Shmishek on the basis of the dominant character traits identified by Leonhard for a particular type.
+        This accentuation test consists of 88 questions concerning 10 types of accentuations.
+    </string>
+    <string name="instruction">"      Read each sentence carefully and evaluate how much what is stated in each of them corresponds to what you usually think, do, experience when someone or something has taken you out of balance, or something is hurting you. You need to click on your answer, after which you will have a button to go to the next question     "</string>
+    <string name="email_forgot_pass">WE WIIL SEND A NEW PASSWORD ON YOUR EMAIL</string>
+    <string name="send">Send a new password</string>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="old_password">OLD PASSWORD</string>
+    <string name="repeat_new_password">REPEAT THE NEW PASSWORD</string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="save">Save</string>
+    <string name="repeat_password">REPEAT PASSWORD</string>
+    <string name="incorrect">Invalid username or password</string>
+    <string name="successfully">Authorization is successful</string>
+    <string name="enter_email_password">Enter your email and password</string>
+    <string name="length_password">The password must be longer than 8 characters</string>
+    <string name="password_successfully">Password changed successfully</string>
+    <string name="opassword_incorrect">The old password is incorrect</string>
+    <string name="match_password">Passwords must match</string>
+    <string name="opassword_and_npassword">Enter the old password and the new password 2 times</string>
+    <string name="user_not_found">The user with this email was not found</string>
+    <string name="new_password_email">A new password has been sent to your email</string>
+    <string name="enter_email">Enter email</string>
+    <string name="quit_app">Are you sure you want to get out?</string>
+    <string name="quit_profile">Are you sure you want to log out of your personal account?</string>
+    <string name="time">Time\'s up</string>
+    <string name="questio">Question</string>
+    <string name="time_test_new">The time for completing the survey is over. Start from the beginning</string>
+    <string name="ok">Ok</string>
+    <string name="in_result">To the results</string>
+    <string name="answer_saved">Your answer is saved</string>
+    <string name="quit_test">Are you sure you want to complete the test?</string>
+    <string name="fields_required">All fields are required</string>
+    <string name="incorrect_email">You have entered an incorrect email</string>
+    <string name="successfully_registered">You have successfully registered</string>
+    <string name="fail_auth">Authorization error</string>
+    <string name="lang">EN</string>
+    <string name="test_name_two">OVERCOMING DIFFICULT LIFE SITUATIONS</string>
+    <string name="never_answer">Never</string>
+    <string name="rare_answer">Rare</string>
+    <string name="often_answer">Often</string>
+    <string name="very_often_answer">Very often</string>
+    <string name="always_answer">Always</string>
+    <string name="answer_disc">When someone or something harms me (damages, embarrasses), takes me out of a state of mental balance, then I am...</string>
+    <string name="extr">Extroversion</string>
+</resources>

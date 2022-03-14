@@ -1,0 +1,17 @@
+<resources>
+    <style name="HintTextRegistration" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/mainOrangeBar</item>
+        <item name="android:layout_marginRight">80px</item>
+        <item name="android:layout_marginLeft">80px</item>
+        <item name="android:layout_marginBottom">20px</item>
+        <item name="android:textColorHint">@color/mainOrangeBar</item>
+    </style>
+
+    <style name="EditTextRegistration" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/mainOrangeBar</item>
+        <item name="colorControlActivated">@color/mainOrangeBar</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">60px</item>
+    </style>
+
+</resources>

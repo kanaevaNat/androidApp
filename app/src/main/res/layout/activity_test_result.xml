@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFCC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/testName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:text="@string/diagram_result"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/testResultChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="25dp"
+                android:paddingTop="50px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/testName" />
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/testResultChart">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/descriptionTypes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:text="@string/typesDescription"
+                        android:textColor="@color/black"
+                        android:textSize="50px" />
+
+                    <TextView
+                        android:id="@+id/demonstrative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:text="@string/lowerStres"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/descriptionTypes" />
+
+                    <TextView
+                        android:id="@+id/delimiter1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:text="@string/delimiter"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/demonstrative" />
+
+                    <TextView
+                        android:id="@+id/stuck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:text="@string/selfApproval"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/delimiter1" />
+
+
+                    <TextView
+                        android:id="@+id/delimiter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:text="@string/delimiter"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/stuck" />
+
+                    <TextView
+                        android:id="@+id/pedantic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:text="@string/selfJustification"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/delimiter2" />
+
+                    <TextView
+                        android:id="@+id/delimiter3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:text="@string/delimiter"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/pedantic" />
+
+                    <TextView
+                        android:id="@+id/excitable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:text="@string/distraction"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/delimiter3" />
+
+                    <TextView
+                        android:id="@+id/delimiter4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:text="@string/delimiter"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/excitable" />
+
+                    <TextView
+                        android:id="@+id/hyperthymic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:text="@string/substitution"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/delimiter4" />
+
+                    <TextView
+                        android:id="@+id/delimiter5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:text="@string/delimiter"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/hyperthymic" />
+
+                    <TextView
+                        android:id="@+id/disthymic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:text="@string/selfAffirmation"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/delimiter5" />
+
+                    <TextView
+                        android:id="@+id/delimiter6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:text="@string/delimiter"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/disthymic" />
+
+                    <TextView
+                        android:id="@+id/anxiouslyFearFull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:text="@string/psychomuscularRelaxation"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/delimiter6" />
+
+                    <TextView
+                        android:id="@+id/delimiter7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:text="@string/delimiter"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/anxiouslyFearFull" />
+
+                    <TextView
+                        android:id="@+id/emotionally"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:text="@string/controllOverSituation"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/delimiter7" />
+
+                    <TextView
+                        android:id="@+id/delimiter8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:text="@string/delimiter"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/emotionally" />
+
+                    <TextView
+                        android:id="@+id/emotive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:text="@string/selfControll"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/delimiter8" />
+
+                    <TextView
+                        android:id="@+id/delimiter9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:text="@string/delimiter"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/emotive" />
+
+                    <TextView
+                        android:id="@+id/cyclothymic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_weight="4"
+                        android:text="@string/positiveSelfMotication"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/delimiter9" />
+
+                    <TextView
+                        android:id="@+id/delimiter10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:text="@string/delimiter"
+                        android:textColor="@color/black"
+                        android:textSize="50px"
+                        app:layout_constraintTop_toBottomOf="@+id/cyclothymic" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:background="@color/mainOrangeBar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/profile_121261" />
+
+            <TextView
+                android:layout_width="83dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:gravity="center"
+                android:text="@string/personal"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+            <TextView
+                android:layout_width="83dp"
+                android:layout_height="19dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="@string/test"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Test" />
+
+            <ImageView
+                android:id="@+id/Test"
+                android:layout_width="34dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginRight="84dp"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icons8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
